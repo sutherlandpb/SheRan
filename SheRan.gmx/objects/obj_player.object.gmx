@@ -30,6 +30,9 @@ if (instance_number(obj_player) &gt; 1) {
     instance_destroy();
 }
 event_inherited();
+audio_play_sound(snd_slow_music, 0, true);
+
+
 made_random_room = false;
 hp = 20;
 player_speed = 2;
